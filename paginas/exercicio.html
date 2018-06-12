@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>plugin link</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <style>
+      *{
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    </style>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+      
+      /* criando um plugin */
+      (function(){
+
+        $.fn.mostrarLink = function (){
+          this.filter('a').each( function(){
+            let link = $(this);
+            link.append(' [ '+link.attr('href')+' ] ');
+            return this;
+          });
+        }; // mostrarLink
+
+        $.fn.legendaImagem = function (){
+          $("img").after('<h2>'+$(this).attr('alt')+'</h2>');
+        }; //legendaImagem
+
+        $.fn.mudaTexto = function(){
+          let texto = $(this).html();
+          let resultado = texto
+          .replace(/e/g,"enter")
+          .replace(/i/g,"inis")
+          .replace(/o/g,"omber")
+          .replace(/u/g,"ufter")
+          .replace(/a/g,"ais");
+          return $(this).html(resultado);
+        };//mudaTexto
+
+      }(jQuery));
+
+      
+      // iniciando o script
+      $(document).ready(function(){
+
+        $('a').mostrarLink();
+        $('img').legendaImagem();
+        $('div').mudaTexto();
+
+      });
+
+    </script>
+
+  </head>
+  <body>
+
+    <a href="MinhaURL"> texto link </a>
+
+    <br><br><br>
+
+    <img src="../images/rogerinho.jpg" alt="Rogerinho do Ingá">
+
+    <br><br><br>
+
+    <div>
+      e, i, o, u, a
+    </div>
+
+  </body>
+</html>
