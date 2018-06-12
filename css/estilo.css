@@ -1,0 +1,163 @@
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #1268AB;
+}
+
+main{
+	background:white url('../images/paper.jpg') fixed;
+	background-size: cover;
+}
+
+a{
+	color: #000 !important;
+	text-decoration: none;
+}
+
+a:hover{
+}
+
+.loading{
+	margin: auto;
+	text-align: center;
+}
+
+.loading img{
+	width: 200px;
+}
+
+.center{
+	text-align: center;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.divide-2{
+	width: 49%;
+	box-sizing: border-box;
+}
+
+.pula-linha{
+	clear: both;
+	height: 5px;
+	display: block;
+}
+
+.error{
+	color: #1268AB;
+}
+
+#lightgallery{
+	text-align: center;
+}
+
+#lightgallery img{
+	width: 243px;
+	height: 180px;
+	border: 5px solid #000;
+	border-radius: 10px;
+	margin: 3px;
+}
+
+#container{
+	width: 800px;
+	margin: auto;
+}
+
+#topo{
+	height: 300px;
+}
+
+#topo .imagem{
+	height: 280px;
+	float: right;
+	margin-top: 10px;
+}
+
+#topo .logo{
+	height: 100px;
+	float: left;
+	margin-top: 100px;
+}
+
+#menu ul, #menu{
+	padding: 0;
+	margin: 0;
+	background: yellow;
+}
+
+.stellarnav{
+	z-index:10 !important; 
+}
+
+#carousel{
+	text-align: center;
+	padding: 30px;
+}
+
+#carousel .slick{
+	margin: auto;
+}
+
+#carousel .slick img{
+	width: 100%;
+	height: 400px;
+}
+
+#conteudo{
+	min-height: 300px;
+	padding: 50px 0px;
+}
+
+#voltarTopo{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	cursor: pointer;
+	border: none;
+	width: 100px;
+}
+
+#form1 label{
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 10px 0px;
+}
+
+#form1 input, textarea, option, select{
+	font-size: 20px;
+	padding: 10px;
+	width: 100%;
+	border:none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,0.5);
+	border: 3px solid #000;
+}
+
+#form1 {
+	width: auto;
+	margin: auto;
+}
+
+#form1 button{
+	border: 3px solid #000;
+	background: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 700;
+}
